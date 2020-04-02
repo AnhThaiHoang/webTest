@@ -1,0 +1,78 @@
+ <!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="kaskadoveStyly/cssWeb4.css"/>
+		<meta charset = "UTF-8"/>
+		<title>web4</title>
+	</head>
+	<body>
+		<h1>Kaskádové styly</h1>
+			<a href="#formatovavi_html">Formátování HTML</a><br/>
+			<a href="#co_je_css">Co je CSS</a><br/>
+			<a href="#troji_pouziti_css">Trojí použítí CSS</a><br/>
+			<a href="#css3">CSS3</a><br/>
+			
+			<a href="mailto:bucky@yahoo.com">My Email</a><br/><!-- not recommended-->
+			<a href="http://google.com" title= "Jdeš na google">google</a><br/>
+			<a href="http://youtube.com"><img src="obrázky/neco.jpg" height="150" alt = "haha nepovedlo se"/></a>
+			
+			
+			<h3><a name="formatovavi_html"></a>Formátování HTML</h3>
+			<p>Každý text má obsah a formu. Když mluvím o formátu (formě) webových stránek, myslím tím třeba barvu a velikost písma, pozadí, zarovnání atd., prostě všechno, co nepatří do obsahu. To je formátování.</p>
+			<p>Protože se jazyk HTML vyvíjel, vznikaly časem různé způsoby, jak formátovat text. Proto dnes existují dva odlišné způsoby, jak v HTML třeba obarvit písmo nebo ztučnit text.</p>
+			<ol>
+				<li>Starší způsob používá přímo HTML tagy. (Například kurzíva se dělá pomocí tagů &lt;i&gt; a &lt;/i&gt;: &lt;i&gt;kurzíva&lt;/i&gt;). Pomocí tagů se však některé věci nedají udělat.</li>
+				<li>Novější způsob -- CSS styly -- používá tag &lt;style&gt; a obecný atribut "style", kterému se přiřazuje nějaká definice. Je to složitější, ale užitečnější a všeobecné.</li>
+			</ol>
+			<h3><a name="co_je_css"></a>Co je CSS?</h3>
+			<p>CSS vzniklo někdy kolem roku 1997 v Norsku. Je to kolekce metod pro grafickou úpravu webových stránek. Ta zkratka znamená Cascading Style Sheets, česky "kaskádové styly". Kaskádové, protože se na sebe mohou vrstvit definice stylu, ale platí jenom ta poslední. Poslední verzí kaskádových stylů je CSS3, které do možností přidává třetí rozměr, práci s vektorovou grafikou, animace, nové typy selektorů, nové vlastnosti pozadí, nové vlastnosti rámečku - což je důležité především proto, že se díky tomu dají v CSS dělat různé tvary (od čtverce po hvězdu), nastavení sloupců (jejich šířky, mezer mezi nimi..) atd. V kombinaci s nejnovější verzí HTML5 tvoří základ moderních webů. </p>
+			<i style="font-size: 20px;">Výhody používaní kaskádových stylů: </i>
+			<ol>
+				<li>Rozsáhlejší možnosti formátování 
+				<li>Jednodušší údržba webové prezentace (pokud chceme změnit např. barvu nadpisu, nemusíme složitě hledat v HTML dokumentu, ale stačí změnit jednu vlastnost v CSS souboru). </li>
+				<li>Oddělení struktury a stylu (v jednom dokumentu budeme mít pouze sémanticky označen obsah a v druhém dokumentu máme definice vzhledu stránek). </li>
+				<li>Cachování stylů – styly můžou být uložený do cache paměti, tím můžeme docílit zrychlení načtení stránek. Na druhou stranu při použití externího CSS souboru dochází k dalšímu http požadavku. </li>
+				<li>CSS vlastnosti jednotlivých elementů můžeme dynamicky měnit pomocí Javascriptu. </li>
+				<li>Pomocí CSS můžeme formátovat jakýkoliv XML jazyk. </li>
+				<li>Můžou existovat různé styly pro různá zařízení (jiný styl proč počítač, pro mobil, pro tisk). </li>
+				<li>Koncový uživatel může napsat vlastní CSS styl pro libovolnou stránku (většina prohlížečů podporuje uživatelské styly, takže si může uživatel nastavit, aby se mu např. hypertextové odkazy zobrazovaly jinou barvou a podtrženě). </li>
+				<li>V kombinaci s Javascriptem může velmi vylepšit vzhled stránky. </li>
+			</ol>
+			<i>Nevýhody používání kaskádových stylů: </i>
+			<p>Ne vždy dostatečná podpora v majoritních prohlížečích (prohlížeče obsahují v implementaci CSS chyby a je někdy nesnadné kód napsat tak, aby se ve všech běžných prohlížečích výsledek zobrazil stejně). </p>
+			
+			<h3><a name="troji_pouziti_css"></a>Trojí použití CSS</h3>
+			Styl se může nadeklarovat třemi způsoby, níže uvádím příklady. Stačí, když se pro začátek naučíte naučíte jeden ze tří způsobů:
+			<ol>
+				<li>Přímý styl - Přímo v textu zdroje u formátovaného elementu pomocí atributu style="...". 
+					<mark style="background-color:yellow;">&lt;p style="color: red"&gt;Tento odstavec bude červený.&lt;/p&gt;</mark></li>
+				
+				<li>Stylopis (angl. "stylesheet") - v hlavičce stránky. Stylopis je jakýsi seznam stylů. Je v něm obecně napsáno, co má být jak zformátováno, například že nadpisy mají být zelené. Do stránky se stylopis píše mezi tagy &lt;style&gt; a &lt;/style&gt;.
+					<mark>&lt;style&gt;p {color: red}&lt;/style&gt;</mark></li>
+				
+				<li>Použitím externího stylopisu -- to je soubor *.css, na který se stránka odkazuje tagem &lt;link&gt;. V souboru je umístěný stylopis. Hlavní výhoda je v tom, že na jeden takový soubor se dá nalinkovat mnoho stránek, takže pak všechny vypadají podobně. 
+					<mark>&lt;link rel="stylesheet" type="text/css" href="styly.css"&gt;</mark></li>
+			</ol>
+			<h3><a name="css3"></a>CSS3</h3>
+			<p>Jak jsem již zmínil v úvodu, nejnovější verzí kaskádových stylů je verze s číslovkou 3 na konci. Ta přináší mnoho novinek a s nimi však spojeno spoustu problémů - především s podporou jednotlivých prohlížečů. V současné době totiž každý prohlížeč vyžaduje vlastní prefix u některch atributů, což práci programátora značně ztěžuje a prodlužuje. Od roku 2011, kdy se poprvé objevily “moduly třetí třídy” se tato situace změnila k lepšímu, ovšem k větší standardizaci těchto atributů zatím nedošlo. CSS3 zavedlo do světa kaskádových stylů nový pojem - moduly. Jazyk už se nevytváří kompletní, ale tvoří se pro něj jen nové metody a zápisy (moduly) které se později implementují. Proto můžeme už nyní slyšet o “CSS4”, které vlastně nepředstavuje nic jiného, než moduly čtvrté kategorie pro CSS3.</p> 
+			
+			<h3 class="sedaBarva">Animace</h3>
+			<p>Jednou z novinek v CSS3 je možnost jednoduchého animování elementů webu. Tyto animace samozřejmě nedosahují velikosti například jQuery, ovšem i tak se s nimi dá zahrát velké divadlo. Animace v kaskádových stylech užívají několika způsobů svého vytvoření.</p>
+			
+			<h3 class="sedaBarva"><u>Transitions - přechody</u></h3>
+			Transition vlastnosti zapisujeme přímo do css definice jednotlivých elementů, pro které chceme animaci použít.
+			<ul>
+				<li>První vlastnost transition-property určuje, jakou vlastnost budeme animovat. Hodnota tedy může být třeba color, border. Více vlastností, které chceme animovat, oddělujeme čárkou. transition-property: width, border, left;.</li>
+				<li>Vlastností transition-duration definujeme délku animace v sekundách. Tedy například 0.5s, 2s apod...transition-duration: 0.8s;.</li>
+				<li>Poslední vlastností je transition-timing-function, která udává, jaká funkce se má použít na výpočet průběhu animace. Možnosti jsou: ease (default) - bez hodnoty, linear, ease-in, ease-out, ease-in-out,step-start, step-end, lze definovat i vlastní, pomocí hodnoty cubic-bezier() pro průběh podle námi zadané Bézierovy křivky, nebo steps() pro zadání kroků.</li>
+			</ul>
+			Transitions animace se dají použít například pro prolínání dvou elementů, “načtení” některého elementu apod.
+			<h3 class="sedaBarva"><u>Keyframes</u></h3>
+			<p>Keyframes <span>animace umožňuje nadefinovat klíčové</span> body a k těmto bodům přiřazovat, co všechno animace v daný bod udělá. Jak jsem již zmínil v úvodu, tento typ animace umožňuje pojmenování a následnou aplikaci na libovolný počet prvků. To velmi zkrátí zápis u větších projektů. Jsme ale opět nuceni provádět zápis vlastnosti pro každý prohlížeč zvlášť. Bez prefixu, -webkit-, -o- a -moz-. Samotnou vlastnost zapisujeme zavináčem, názvem vlastnosti a námi zvoleným názvem dané animace. @keyframes nase_animace. Obsah vlastnosti opět zapisujeme do složených závorek {}.</p>
+			<p>První možnost je použít předdefinované body animace from a to. Které jsou totožné s 0% a 100%. Nebo lze použít přímo procentuální označení jednotlivých klíčových bodů. 20% 40% 60% atd... Kód bude vypadat tedy takto:</p>
+	</body>
+	
+	
+	
+
+</html>

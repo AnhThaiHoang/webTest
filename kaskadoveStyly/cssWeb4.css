@@ -1,0 +1,47 @@
+body{
+	background-color:black;
+	color:white;
+	margin-left:30%;
+	margin-right: 30%;
+}
+
+p{
+	text-indent:25px;
+	margin:50px;
+}
+p:first-letter{
+	font-weight:bold;
+	color:green;
+	font-size:20px;
+
+}
+h3{
+	border-left-color:yellow;
+	border-left-style:dotted;
+}
+
+a:link{
+	color:red;
+	text-decoration:none;
+}
+a:visited{
+	color:green;
+}
+a:hover{
+	background-color:blue;
+	color:white;
+	text-decoration:underline;
+}
+a:active{
+	background-color:orange;
+	
+}
+.sedaBarva{
+	color:gray;
+}
+.sedaBarva:hover{
+	background-color:white;
+}
+span{
+	background-color: red;
+}

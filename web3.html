@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="icon" href="https://f0.pngfuel.com/png/370/310/batman-illustration-png-clip-art.png"/>
+		<link rel="stylesheet" href="kaskadoveStyly/haha.css"/>
+		<meta charset = "UTF-8"/>
+		<title>stranka 3</title>
+	</head>
+	<body>
+	<nav>
+			<ul class="navigace" align="center">
+				<li class="neaktivni_polozka"><a href="index.html">web</a></li>
+				<li class="neaktivni_polozka"><a href="web2.html">web2</a></li>
+				<li class="aktivni_polozka"><strong>jsi tady</strong></li>
+			</ul>
+		</nav>
+			<h1>HTML</h1>
+				<ol>
+					<li><a href="#b1">HTML dokument dále může obsahovat další prvky</a></li>
+					<li><a href="#b2">Struktura dokumentu</a></li>
+					<li><a href="#b3">Druhy značek</a></li>
+					<li><a href="#r1">Základní struktura HTML dokumentu</a></li>
+					<li><a href="#r2">Formátování textu</a></li>
+					<li><a href="#r3">Bloky</a></li>
+					<li><a href="#r4">Seznamy</a></li>
+					<li><a href="#r5">Atributy</a></li>
+				</ol>
+				
+				<p class="tucne">HyperText Markup Language je název značkovacího jazyka, který se používá pro tvorbu webových stránek. Jedná se o hlavní jazyk pro tvorbu www stránek.</p>
+				<p class="kurziva">Jazyk je aplikací dříve vyvinutého univerzálního značkovacího jazyka SGML. HTML se vyvíjel v závislosti na webových prohlížečích.</p>
+				<p>Jazyk je charakterizován množinou značek (tagů). Mezi značky se uzavírají části textu dokumentu a tím se určuje význam obsaženého textu. Názvy jednotlivých značek a jejich vlastní se uzavírají mezi závorky<br/> &lt; &gt;. Část dokumentu, která je tvořena otevírající značkou, nějakým obsahem a ukončující značkou se nazývá element dokumentu.</p>
+				<p>Pro příklad: &lt;b&gt;Ahoj!&lt;/b&gt; tvoří tučný text.</p>
+				<p>Značky jsou obvykle párové, kde je počáteční značka shodná s koncovou, jen je na konci před značkou lomítko.</p>
+				<p>Pro příklad: vytvoření odstavce textu: &lt;p&gt;Zde je jeden odstavec&lt;/p&gt;.</p>
+				<p>Některé značky jsou nepárové.</p>
+					<b>Pro příklad:</b>
+					<ul>
+						<li>Vytvoření vodorovné čáry: &lt;hr&gt;</li>
+						<li>Nový řádek: &lt;br&gt;</li>
+					</ul>
+				<p>Značky mohou obsahovat vlastnosti, které o nich uvádí důležité informace. Koncové značky už žádnou vlastnost nemají. Pro příklad značka &lt;a&gt;, kde uvedeme vlastnost href říká, kam se uživatel po kliknutí na něj dostane.</p>
+				<p>Příklad: &lt;a href=“https://google.com“&gt;Přesměrování na google&lt;/a&gt;</p>
+				<p>Ke značkám dále můžeme doplnit více vlastností. Příklad: otevření webové stránky v novém okně:
+				   &lt;a href=“https://google.com“ target=“_blank“&gt;Přesměrování na google&lt;/a&gt;</p>
+				<p>K odkazu dále můžeme doplnit titulek, který se zobrazí po najetí kurzorem na hypertextový odkaz nebo přiřadit třídu, které můžeme definovat vlastnosti pomocí kaskádových stylů (CSS).</p>
+					<b style="color:#0000ff" id="b1">HTML dokument dále může obsahovat další prvky:</b>
+						<ul>
+							<li>DTD direktivy: začínají pomocí &lt;!, slouží pro zpracovatele dokumentu, v našem případě prohlížeč.</li>
+							<li>Komentáře: slouží jako pomocné texty pro programátora, nejedná se o obsah dokumentu, nezobrazují se a prohlížeč je ignoruje.</li>
+							<li>Kód skriptovacích jazyků: PHP nebo Javascript</li>
+							<li>Kaskádové styly</li>
+						</ul>
+	
+					<b style="color:#0000ff" id="b2">Struktura dokumentu:</b>
+					<ul>
+						<li>Deklarace typu dokumentu: značka &lt;!DOCTYPE html&gt; která říká prohlížeči, že se jedná o HTML dokument</li>
+						<li>Kořenový element: značka &lt;html&gt; &lt;/html&gt;, která reprezentuje celý dokument</li>
+						<li>Hlavička dokumentu: značka &lt;head&gt; &lt;/head&gt;, obsahuje metadata (= data o jiných datech), která se vztahují k celému dokumentu. Definuje kódování, název dokumentu, autora, popis, klíčová slova, titulek dokumentu nebo kaskádové styly.</li>
+						<li>Tělo dokumentu: značka &lt;body&gt; &lt;/body&gt;, zahrnuje vlastní obsah dokumentu.</li>
+					</ul>
+		
+					<b style="color:#0000ff" id="b3">Druhy značek:</b>
+					<ul>
+						<li>Strukturální: rozvrhují strukturu dokumentu, například odstavce &lt;p&gt;, nadpisy &lt;h1&gt;, &lt;h2&gt;. Strukturální značky dodávají dokumentu formu.</li>
+						<li>Popisné: popisují povahu prvku, například nadpis &lt;title&gt; nebo adresa &lt;address&gt;.</li>
+						<li>Stylistické značky: určují vzhled prvku při zobrazení. Typickým příkladem je &lt;b&gt; tučné písmo. Od těchto značek se postupně odstupuje a používají se kaskádové styly, které vzhled popisují odděleně od obsahu dokumentu. Důvodem, proč nepoužívat tyto značky, ale kaskádové styly, může být, že jsou orientovány na prohlížení na obrazovce počítače, nepočítá se příliš pro používání dokumentu jiným způsobem, např. prohlížení pro postižené (čtečky pro slepce), mobilní zařízení atd. Kaskádové styly však umožňují definovat rozdílná zobrazení pro různá zařízení.</li> 
+					</ul>
+					<b style="color:#ff0000" id="r1">Základní struktura HTML dokumentu</b><br/>
+					   Každý HTML soubor by měl obsahovat několik základních tagů označujících hlavičku a tělo. Těmito tagy je zaručeno, že všichni klienti (především prohlížeče) pochopí, o co v dokumentu vlastně jde. Mezi tyto základní tagy patří:
+						<p>
+							<table>
+								<th colspan="4">Základní struktura html</th>
+								<tr> <td>&lt;html&gt;</td>	<td>začátek HTML dokumentu</td>	<td>je párový</td>		<td>začíná a končí dokument, jedná se však o nepovinnou značku</td></tr>
+								<tr> <td>&lt;head&gt;</td>	<td>hlavička</td> 				<td>je párový</td>		<td>hlavička dokumentu, obsahuje další tagy určující například klíčová slova</td></tr>
+								<tr> <td>&lt;body&gt;</td>	<td>tělo stránky</td>			<td>je párový</td>		<td>obsahuje veškerý zobrazovaný obsah stránky</td></tr>
+								<tr> <td>!doctype</td>		<td>specifikace</td>			<td>není párový</td>	<td>udává informace o verzi html, přepíná zobrazovací módy CSS aj.</td></tr>
+							</table>
+						</p>
+					<b style="color:#ff0000" id="r2">Formátování textu</b><br/>
+					   V dnešních dnech se pro formátování textu na webové stránce používá spíše kaskádových stylů, které dokáží upravit formát celého dokumentu. Mezi nejpoužívanější HTML tagy upravující text patří: 
+						<p>
+							<table cellpadding="10">
+								<th colspan="3">Formátování textu</th>
+								<tr><td>&lt;b&gt;</td>					<td>tučné písmo</td>		<td>párový</td></tr>
+								<tr><td>&lt;i&gt;</td>					<td>kurziva</td>			<td>párový</td></tr>
+								<tr><td>&lt;span&gt;</td>				<td>úsek textu</td>			<td>párový</td></tr>
+								<tr><td>&lt;sub&gt;, &lt;sup&gt;</td>	<td>dolní/horní index</td>	<td>párový</td></tr>
+							</table>
+						</p> 
+					<b style="color:#ff0000" id="r3">Bloky</b><br/>
+					   Bloky slouží k oddělování jednotlivých částí stránky (nejčastěji textu) 
+						<p> 
+							<table cellspacing="10"> 
+								<th colspan="3">Bloky</th>
+								<tr><td>&lt;p&gt;</td>						<td>odstavec</td>						<td>nepovinně párový</td></tr>
+								<tr><td>&lt;br&gt;</td>						<td>zalomení řádku</td>					<td>nepárový</td></tr>
+								<tr><td>&lt;b&gt;</td>						<td>oddíl</td>							<td>párový</td></tr>
+								<tr><td>&lt;h1&gt;, &lt;h2&gt;,....</td>	<td>nadpis 1. , 2. ,...x. úrovně</td>	<td>párový</td></tr>
+							</table> 
+						</p> 
+					<b style="color:#ff0000" id="r4">Seznamy</b><br/>
+					   Někdy též označovány jako odrážky či číslování. 
+						<p> 
+							<table>
+								<th colspan="3">Seznamy</th>
+								<tr><td>&lt;li&gt;</td>	<td>položka seznamu</td>	<td>nepovinně párový</td></tr>
+								<tr><td>&lt;ol&gt;</td>	<td>číslovaný seznam</td>	<td>párový
+								<tr><td>&lt;ul&gt;</td>	<td>odrážkový seznam</td>	<td>párový
+							</table>
+						<br/>
+						Mezi další tagy patří tagy označující odkaz (<b>&amp;lt;</b> a <b>&amp;gt;</b>), tagy pro vkládání různých objektů - od obrázků až po Java applety, tagy upravující formuláře apod. 
+						</p> 
+					
+					<b style="color:#ff0000" id="r5">Atributy</b><br/>
+					   Každý tag může mít různé atributy (vlastnosti), které jej odlišují od ostatních prvků stejné kategorie. Pomáhají tak například ve formátování pomocí CSS. Mezi používané patří <em>class</em>, <em>id</em> a <em>name</em>. Pro přímý zápis stylu se používá vlastnost style. 
+	</body>
+</html>
